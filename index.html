@@ -1,131 +1,253 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Hunter Hamilton - Engineering Analyst</title>
-</head>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
 <body>
-    <header>
-        <h1>Hunter Hamilton</h1>
-        <p>Mechanical Engineer | Data Analyst</p>
-        <img src="Hunter Headshot.jpg" alt="Avatar">
-    </header>
 
-    <!-- <nav>
+<section id = "nav-bar">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <!-- Add Image or Initials here --> </a> 
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav .ml-auto">
+              <li class="nav-item">
+                <a class="nav-link"  href="#top">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#employment">Employment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Employment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+</section>
+
+<!-- Banner Section -->
+<section id = "banner">
+<div class = "container">
+<div class = "row">
+<div class = "col-md-6">
+    <p class = "name-title">Hunter Hamilton</p>
+    <p class = "cert-tile">Mechanical Engineer | Data Analyst</p>
+</div>
+<div class = "col-md-6 text-center"> 
+    <img src="images/Hunter Headshot.jpg" class = "img-head">
+</div>
+</div>
+</div>
+
+</section>
+
+<!-- Wave Section -->
+<section id = "wave"> 
+    <img src="images/wave2.png" class = "img-bottom">
+</section>
+
+<!-- About Me section -->
+<section id = "about"> 
+<div class = "container">
+<h1 class="title"> About Me </h1>
+<div class="row">
+<p>I am an Engineering Analyst with a passion for optimizing energy systems and data analysis. My goal is to find innovative solutions to complex problems.</p>
+</div>
+</div>
+</section>
+
+
+<!-- ---------Skills Section -------- -->
+
+<section id="skills">
+<div class = "container"> 
+<h1 class="title"> Skills </h1>
+<div class="row">
+<div class = "col-md-4 skills"> <!-- 3 columns desired so we +1 from desired -->
+    <!-- <img src="images/wave2.png" class = "skills-img"> -->
+    <h3>Data & Programming</h3>
+    <ul>
+        <li>Data Analysis</li>
+        <li>Data Science</li>
+        <li>Python</li>
+        <li>T-SQL and MS-SQL</li>
+        <li>MATLAB</li>
+        <li>Excel (Advanced)</li>
+        <li>Statistical Modeling</li>
+        <li>Forcast & Predictions</li>
+        <!-- Add more data-related skills here -->
+    </ul>
+</div>
+<div class = "col-md-4 skills"> <!-- 3 columns desired so we +1 from desired -->
+    <!-- <img src="images/wave2.png" class = "skills-img"> -->
+    <h3>Reporting</h3>
+    <ul>
+        <li>Power BI</li>
+        <li>Tableau</li>
+        <li>x</li>
+        <li>x</li>
+        <li>x</li>
+        <li>x</li>
+        <!-- Add more design-related skills here -->
+    </ul>
+</div>
+<div class = "col-md-4 skills"> <!-- 3 columns desired so we +1 from desired -->
+    <!-- <img src="images/wave2.png" class = "skills-img"> -->
+    <h3>Engineering</h3>
+    <ul>
+        <li>Mechanical Engineering</li>
+        <li>Energy Modeling</li>
+        <li>SolidWorks </li>
+        <li>AutoCAD</li>
+        <li>AutoDesk</li>
+        <li>Corel Draw</li>
+        <li>LabVIEW</li>
+        <li>Bluebeam</li>
+        <!-- Add more engineering-related skills here -->
+    </ul>
+</div>
+</div>
+</div>
+</section>
+          
+
+<!-- ---------Skills Section -------- -->
+
+<section id="projects">
+    <div class = "container"> 
+    <h1 class="title"> Projects </h1>
+    <div class="row">
+    <p>Check out a few of my most recent projects:</p>
+    <div class = "col-md-6 projects">
+        <h3>Predictive Maintenance</h3>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li>Description</li>
+            <li>Methods</li>
+            <li>Results</li>
+            <li>Next Steps</li>
         </ul>
-    </nav> -->
+        </div>
+        <div class = "col-md-6 text-center"> 
+            <img src="images/Hunter Headshot.jpg" class = "img-projects">
+        </div>
+    <div class = "col-md-6 projects">
+        <h3>Personal Example</h3>
+        <ul>
+            <li>Description</li>
+            <li>Methods</li>
+            <li>Results</li>
+            <li>Next Steps</li>
+        </ul>
+        </div>
+        <div class = "col-md-6 text-center"> 
+            <img src="images/Hunter Headshot.jpg" class = "img-projects">
+        </div>
+</div>
+</div>
+</section>
 
-    <section id="home" class="section">
-        <h2>Home</h2>
-        <p>Welcome to my resume website!</p>
-    </section>
+<!-- ---------Skills Section -------- -->
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>I am an Engineering Analyst with a passion for optimizing energy systems and data analysis. My goal is to find innovative solutions to complex problems.</p>
-    </section>
+<section id="employment">
+    <div class = "container"> 
+    <h1 class="title"> Employment History </h1>
+    <div class="row">
+    <div class="work-container">
+        <div class="column left">
+            <h3>DB Engineering  </h3>
+            <h4>Engineering Analyst -- March 2021 - Present</h4>
+            <ul>
+                <li>Optimize building system and facilities operations of large campuses through data analysis. </li>
+                <li>Analyze system data for energy optimization to isolate deficient and underperforming equipment. </li>
+                <li>Lead client partner meetings on recommendations to increase facility efficiency and cost savingsopportunities.</li>  
+                <li>Consult for client partners including Google, Walmart, Exxon, Pentagon, and Goldman Sachs. </li>
+                <!-- Add more data-related skills here -->
+            </ul>
+            <h4>Comissioning Engineer -- July 2020 - February 2021</h4>
+            <ul>
+                <li>Represented developers during installation of mechanical systems in new and retrofit commercial buildings . </li>
+                <li>Developed and led functional performance testing of all systems and equipment to ensure proper operational 
+                    turnover. </li>
+                <li>Generated final commissioning reports and projected energy models to aid operations by facility personnel.</li>  
+                <li>Managed data collection and integration for building management systems throughout the construction process . </li>
+                <!-- Add more data-related skills here -->
+            </ul>
+        </div>
+        </div>
+        <div class="column right">
+            <h3>Musgrove Engineering </h3>
+            <h4>Design Engineer Intern -- June 2019 - August 2019</h4>
+            <ul>
+                <li>Assisted in design of new HVAC and plumbing systems for regional commercial buildings. </li>
+                <li>Selected mechanical equipment and piping for building systems by generating building envelope and space calculations. </li>  
+                <li>Created mechanical drawings and schedules in AutoCAD for system design. </li>
 
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="column left">
-                <h3>Data</h3>
-                <ul>
-                    <li>Data Analysis</li>
-                    <li>Data Science</li>
-                    <li>Python</li>
-                    <li>T-SQL and MS-SQL</li>
-                    <li>MATLAB</li>
-                    <li>Excel (Advanced)</li>
-                    <li>Power BI</li>
-                    <li>Tableau</li>
-                    <li>Statistical Modeling</li>
-                    <li>Forcast & Predictions</li>
-                    <!-- Add more data-related skills here -->
-                </ul>
-            </div>
-            <div class="column middle">
-                <h3>Design</h3>
-                <ul>
-                    <li>SolidWorks </li>
-                    <li>AutoCAD</li>
-                    <li>AutoDesk</li>
-                    <li>Corel Draw</li>
-                    <li>LabVIEW</li>
-                    <li>Bluebeam</li>
-                    <!-- Add more design-related skills here -->
-                </ul>
-            </div>
-            <div class="column right">
-                <h3>Engineering</h3>
-                <ul>
-                    <li>Mechanical Engineering</li>
-                    <li>Energy Modeling</li>
-                    <!-- Add more engineering-related skills here -->
-                </ul>
+                <!-- Add more engineering-related skills here -->
+            </ul>
+        </div>
+    </div>
+</section>
+  
+
+
+<!-- ---------Footer Section -------- -->
+
+<section id="Contact">
+    <div class = "container"> 
+        <!-- <h1 class="title"> Contact </h1> -->
+        <div class="row">
+        <div class = "col-md-6 contact">
+            <h3>Contact</h3>
+            <p> <i class="fa-solid fa-envelope" style="color: #bfbfbf;"></i> hhunterr71@gmail.com</p> 
+        </div>
+        <div class = "col-md-6 text-center"> 
+            <h3>Social</h3>
+                <div class ="social-icons img" >
+                <!-- <a href="#"><img src="images/fb.png"></a> -->
+                <a href="#"><img src="images/ig.png"></a>
+                <a href="#"><img src="images/linkedin.png"></a>
+                <a href="#"><img src="images/yt.png"></a>
             </div>
         </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <p>Check out a few of my most recent projects:</p>
-        <ul>
-            <li>Predictive Maintenance - Description</li>
-        </ul>
-    </section>
-
-    <section id="work" class="section">
-        <h2>Employment History</h2>
-        <div class="work-container">
-            <div class="column left">
-                <h3>DB Engineering  </h3>
-                <h4>Engineering Analyst -- March 2021 - Present</h4>
-                <ul>
-                    <li>Optimize building system and facilities operations of large campuses through data analysis. </li>
-                    <li>Analyze system data for energy optimization to isolate deficient and underperforming equipment. </li>
-                    <li>Lead client partner meetings on recommendations to increase facility efficiency and cost savingsopportunities.</li>  
-                    <li>Consult for client partners including Google, Walmart, Exxon, Pentagon, and Goldman Sachs. </li>
-                    <!-- Add more data-related skills here -->
-                </ul>
-                <h4>Comissioning Engineer -- July 2020 - February 2021</h4>
-                <ul>
-                    <li>Represented developers during installation of mechanical systems in new and retrofit commercial buildings . </li>
-                    <li>Developed and led functional performance testing of all systems and equipment to ensure proper operational 
-                        turnover. </li>
-                    <li>Generated final commissioning reports and projected energy models to aid operations by facility personnel.</li>  
-                    <li>Managed data collection and integration for building management systems throughout the construction process . </li>
-                    <!-- Add more data-related skills here -->
-                </ul>
-            </div>
-            </div>
-            <div class="column right">
-                <h3>Musgrove Engineering </h3>
-                <h4>Design Engineer Intern -- June 2019 - August 2019</h4>
-                <ul>
-                    <li>Assisted in design of new HVAC and plumbing systems for regional commercial buildings. </li>
-                    <li>Selected mechanical equipment and piping for building systems by generating building envelope and space calculations. </li>  
-                    <li>Created mechanical drawings and schedules in AutoCAD for system design. </li>
-
-                    <!-- Add more engineering-related skills here -->
-                </ul>
-            </div>
-        </div>
-    </section>
-      
+</section>
 
 
+<section id="footer">
 
-    <footer>
-        <p>Email: hhunterr71@gmail.com</p>
-    </footer>
+</section>
+
+<!-- Smooth Scroll -->
+
+<script src="smooth-scroll.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </body>
 </html>
