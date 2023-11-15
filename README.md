@@ -24,7 +24,7 @@ cd Resume
 </pre>
 
 3. Open index.html in your Browser:
-Simply open the 'index.html' file in your preferred web browser to explore the website.
+Simply open the **index.html** file in your preferred web browser to explore the website.
 
 ## Contributions
 I welcome contributions and feedback. If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
