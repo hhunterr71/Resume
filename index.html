@@ -5,29 +5,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
+  
     <!-- Include jQuery first -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+  
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
     <!-- Then include Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+  
+      $('.collapse').collapse()
+    </script>
   </head>
 <body>
 
-<section id = "nav-bar">
+  <section id = "nav-bar">
 
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
+        <div class="container-fluid mx-auto">
           <a class="navbar-brand" href="#"> <!-- Add Image or Initials here --> </a> 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav .ml-auto">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link"  href="#top">Home</a>
               </li>
@@ -38,7 +50,7 @@
                 <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#projects">Project</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#employment">Employment</a>
@@ -81,10 +93,10 @@
 <div class="row">
   <p> I am an Engineering Analyst with a passion for optimizing energy systems and data analysis. My goal is to find innovative solutions to complex problems. </p>
 
-  <p>My career is fueled by a desire for inovation and responsible energy usage. With a background in mechanical engineering, I thrive on crafting sustainable solutions that join technology and environmental consciousness. I'm adept at navigating the intricate landscape of energy analytics, employing data-driven insights to optimize performance and reduce ecological footprints.</p>
+  <p>My career is fueled by a desire for innovation and responsible energy usage. With a background in mechanical engineering, I thrive on crafting sustainable solutions that join technology and environmental consciousness. I'm adept at navigating the intricate landscape of energy analytics, employing data-driven insights to optimize performance and reduce ecological footprints.</p>
   
   <p class = "bold-text">Technical Expertise</p>
-  <p>My skills encompass a wide spectrum of technical knowlege, ranging from proficiency in mechanical engineering principles to data analytics tools. With a meticulous eye for detail, I delve into the nuances of complex systems, deriving meaningful insights that propel projects toward enhanced efficiency and excellence.</p>
+  <p>My skills encompass a wide spectrum of technical knowledge, ranging from proficiency in mechanical engineering principles to data analytics tools. With a meticulous eye for detail, I delve into the nuances of complex systems, deriving meaningful insights that propel projects toward enhanced efficiency and excellence.</p>
 
   <p class = "bold-text">Beyond the Desk</p>
   <p> Away from the world of data, I compete in freeride skiing competitions, pushing my boundaries on the slopes and embracing the challenges that come with it. I channel much of my energy into creating new wave content to document my ski and bike adventures, weaving narratives that invite others to share in the thrill of exploration and the beauty of outdoor pursuits.</p>
@@ -152,31 +164,39 @@
     </div>
   </section>
   
-          
-<section id="projects">
+
+  <section id="projects">
     <div class = "container"> 
-        <h1 class="title"> Projects </h1>
+      <h1 class="title">Projects</h1>
         <div class="row">
             <p>Check out a few of my most recent projects:</p>
-
-            <div class = "col-md-11 projects">
-                <h3>Predictive Maintenance</h3>
-                <ul>
-                    <h4>Description</h4>
-                        <p>In this project, I conceived, developed, and implemented an advanced predictive maintenance program targeting various HVAC motors. The program harnesses live data, motor design specifications, and predictive modeling techniques to proactively detect equipment degradation and suboptimal performance. The primary objective is to mitigate costly and unforeseen equipment failures within HVAC systems.</p>
-
-            <div class="my-4"></div>
+          </div>
         
-            <h4>Methods and Tools</h4>
-                <p>In this portfolio, I showcase my proficiency in developing a state-of-the-art predictive maintenance program. Here's a brief breakdown of the key methods and tools used:</p>
-                <ol>
-                    <li>Real-Time Monitoring: Implementing real-time monitoring allows for the continuous collection of crucial HVAC motor performance metrics. This live data stream serves as the foundation for early anomaly detection and proactive decision-making.</li>
-                    <li>Historical Data Analysis: Through in-depth historical data analysis, I uncover valuable insights, identifying trends and anomalies in past motor behavior. This historical context is pivotal for understanding equipment evolution.</li>
-                    <li>Data Preprocessing: My data preprocessing skills ensure the reliability and quality of the dataset. By cleaning, transforming, and enhancing the data, I guarantee its suitability for predictive modeling by eliminating stagnant, and out of range data. </li>
-                    <li>Predictive Modeling: I leverage advanced predictive modeling techniques to forecast equipment performance. My models, trained on historical data trends and design specifications, are pivotal  in detecting anomalies and predicting potential failures.</li>
-                    <li>Feature Engineering: My proficiency in feature engineering enhances predictive accuracy by creating pertinent features from the dataset. This process enriches the data, allowing models to capture nuanced patterns effectively.</li>
-                </ol>
-                <p>This portfolio highlights my contribution to optimizing maintenance strategies, reducing downtime, and enhancing equipment longevity through the application of these critical methods and tools. </p>
+      <div class="accordion" id="projects-accordion"> 
+         <!-- Accordian #1 Start  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Predictive Maintenance Program
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <div class="card-body">
+                    <h4>Description</h4>
+                    <p>In this project, I conceived, developed, and implemented an advanced predictive maintenance program targeting various HVAC motors. The program harnesses live data, motor design specifications, and predictive modeling techniques to proactively detect equipment degradation and suboptimal performance. The primary objective is to mitigate costly and unforeseen equipment failures within HVAC systems.</p>
+                </div>
+
+                  <h4>Methods and Tools</h4>
+                  <p>In this portfolio, I showcase my proficiency in developing a state-of-the-art predictive maintenance program. Here's a brief breakdown of the key methods and tools used:</p>
+                  <ol>
+                      <li>Real-Time Monitoring: Implementing real-time monitoring allows for the continuous collection of crucial HVAC motor performance metrics. This live data stream serves as the foundation for early anomaly detection and proactive decision-making.</li>
+                      <li>Historical Data Analysis: Through in-depth historical data analysis, I uncover valuable insights, identifying trends and anomalies in past motor behavior. This historical context is pivotal for understanding equipment evolution.</li>
+                      <li>Data Preprocessing: My data preprocessing skills ensure the reliability and quality of the dataset. By cleaning, transforming, and enhancing the data, I guarantee its suitability for predictive modeling by eliminating stagnant, and out of range data. </li>
+                      <li>Predictive Modeling: I leverage advanced predictive modeling techniques to forecast equipment performance. My models, trained on historical data trends and design specifications, are pivotal  in detecting anomalies and predicting potential failures.</li>
+                      <li>Feature Engineering: My proficiency in feature engineering enhances predictive accuracy by creating pertinent features from the dataset. This process enriches the data, allowing models to capture nuanced patterns effectively.</li>
+                  </ol>
+                  <p>This portfolio highlights my contribution to optimizing maintenance strategies, reducing downtime, and enhancing equipment longevity through the application of these critical methods and tools. </p>
 
             <div class="my-4"></div>
 
@@ -241,16 +261,230 @@
                         </div>
                         <div class="col-md-6 result-image">
                             <img src="images/PM_BuildingExpectedCosts.jpg" class="img-result">
-                        </div> 
-                    </div>
-                </li>
-           </ol>
+                </div>
+              </div>
+            </div>
+          </div>
 
-           <!-- More sections above this  -->
+           <!-- Accordian #2 Start  -->
+            <!-- <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  ECM Program
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
+                <div class="accordion-body">
+                  <div class="card-body">
 
-        </ul> 
+                <h4>Description</h4>
+                    <p>In this project, I conceived, developed, and implemented an advanced predictive maintenance program targeting various HVAC motors. The program harnesses live data, motor design specifications, and predictive modeling techniques to proactively detect equipment degradation and suboptimal performance. The primary objective is to mitigate costly and unforeseen equipment failures within HVAC systems.</p>
+                </div>
+              </div>
+            </div> -->
+
+        <!-- Accordian #3 Start  -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Camper Van Build
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree">
+            <div class="accordion-body">
+              <div class="card-body">
+
+                <h4><b>Description:</b></h4>
+                <div class="row">
+                  <div class="col-md-12 result-content">
+                    <p>This was a personal project that was meant to help me fulfill the dream of creating and traveling around the country to work and have unlimited access to the outdoor sports that i've built my life around doing. This involved the research, design, and construction of a multi-purpose adventure vehicle that stuck within my initial budget constraints. </p>
+                    <p><span class = "light_bold-text">The most difficult part of a project of this nature is that it grows, changes, and ultimately is nothing like what you thought it would be in the beginning if you aren't careful.</span> Its extremely important to stick to your original goals, and not be distracted by what others have done. The van is not meant to be perfect, and is meant to be a tool. As an engineer, and and detailed oriented person it was difficult to tell myself when the project was done because at the end of the day it's fun to tinker and improve on things</p>
+
+                    <h6><b>Key Highlights:</b></h6>
+                    <ol>
+                      <li>Designed and constructed a versatile adventure vehicle tailored to my specific needs and budget guidelines.</li>
+                      <li> Overcome challenges associated with project scope changes and evolving requirements, emphasizing the importance of staying true to original goals.</li>
+                      <li> Recognized the balance between perfectionism and functionality, understanding that the vehicle serves as a tool for exploration and adventure.</li>
+                      <li>Leveraged engineering expertise and attention to detail to ensure optimal functionality and durability of the buildout.</li>
+                    </ol>
+                  </div>
+                </div>
+
+              <!-- Image Carousel -->
+              <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/Van/VAN_1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/Van/VAN_2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/Van/VAN_3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/Van/VAN_4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/Van/VAN_5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/Van/VAN_6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/Van/VAN_7.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+                <div class="my-4"></div>
+
+                <h4><b>Design Constraints:</b></h4>
+                <div class="row">
+                  <div class="col-md-12 result-content">
+                    <p>Selecting a vehicle involved a combination of budgeting, must-haves, and personal desires to arrive at a reasonable choice. With numerous options available, each presenting its own pros and cons, determining the "best" one proved challenging.</p>
+                    <p>A significant portion of the engineering process coincided with creating the vehicle/camper decision matrix, as much of the build aimed to stay within budget constraints. This involved determining the required power for a solar system, wiring configurations, insulation methods, and wall attachment techniques. While many resources are now available online, this occurred during the early stages of the "van life" movement when less detailed tutorials were around.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 skills">
+                    <h6><b>Must-haves for Vehicle:</b></h6>
+                    <ul>
+                      <li>Within Budget</li>
+                      <li>Stealth (Not conspicuously noticeable)</li>
+                      <li>Ability to Stand</li>
+                      <li>Gear Garage for Bike, Skis, etc.</li>
+                      <li>Reliable</li>
+                      <li>Easily Drivable in the city</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 skills">
+                    <h6><b>Must-haves for Buildout:</b></h6>
+                    <ul>
+                      <li>Bed</li>
+                      <li>Power</li>
+                      <li>Gear Garage</li>
+                      <li>Seating Area</li>
+                      <li>Cooking Area</li>
+                      <li>Insert pro/con list</li>
+                    </ul>
+                  </div>
+                </div>
+        
+                <div class="my-4"></div>
+        
+                <h4><b>Engineering and Planning:</b></h4>
+                <div class="row">
+                  <div class="col-md-6 result-content">
+                    <p>Grab your pen and paper, because this is where the real fun began. Fortunately, I stumbled upon someone who had already outfitted the walls of a van, saving a significant amount of time that would have been spent stuffing insulation and drilling countless holes for wall studs.</p>
+                  </div>
+        
+                  <div class="col-md-6 skills">
+                    <h6><b>Engineering Focus:</b></h6>
+                    <ul>
+                      <li>Electrical setup</li>
+                      <li>Fan installation</li>
+                      <li>Floor plan design</li>
+                      <li>Bed frame and supports</li>
+                      <li>Kitchen layout and supports</li>
+                    </ul>
+                  </div>
+                </div>
+        
+                <div class="my-4"></div>
+        
+                <h4><b>Construction:</b></h4>
+                <div class="row">
+                  <div class="col-md-12 result-content">
+                    <p><span class = "light_bold-text">The construction process was relatively straightforward but required some strategic planning, as certain elements such as wiring and the bed dimensions influenced the size of other components in the van.</span> The sequence of tasks unfolded as follows:</p>
+                    <ul>
+                      <li>Removed the existing walls, then cut a hole in the roof for the fan and ran wires throughout the van for outlets before reinstalling the walls.</li>
+                      <li>Built and installed the bed frame, along with the flip-down seat integrated into the bed structure.</li>
+                      <li>Constructed and installed the kitchen.</li>
+                      <li>Completed the wiring for lights and outlets in the van.</li>
+                      <li>Installed racks to accommodate skis, climbing gear, and bikes in the gear garage.</li>
+                    </ul>
+                    <p>After determining suitable dimensions for the bed and kitchen counter, I commenced cutting wood. Undertaking this project in Seattle, particularly without a garage during the shoulder season, posed challenges. Daily tasks involved hauling tools and wood from the basement, significantly prolonging the project timeline.</p>
+                    <p>Although I possessed some woodworking experience, it was primarily in a well-equipped shop. Consequently, I enjoyed employing creative techniques to measure and execute long straight cuts using only a jigsaw, circular saw, 2x4, and clamps.</p>
+                  </div>
+                </div>
+        
+                <div class="my-4"></div>
+        
+                <h4><b>Lessons Learned:</b></h4>
+                <div class="row">
+                  <div class="col-md-12 result-content">
+                    <p><span class = "light_bold-text">Importance of Goal Adherence:</span> Recognized the significance of staying true to initial project objectives despite evolving visions and external influences.</p>
+                    <p><span class = "light_bold-text">Value of Continuous Improvement:</span> Found satisfaction in continually refining and enhancing the project while ensuring completion criteria were met.</p>
+                    <p><span class = "light_bold-text">Acknowledgment of Oversight:</span> Although the van initially met desired criteria, the oversight of not prioritizing 4WD for easy mountain access during winter became apparent. This led to the realization of the need for a vehicle with 4WD capabilities.</p>
+                    <p><span class = "light_bold-text">Preparation for Delays:</span> Acknowledged the inevitability of delays in projects of this nature and emphasized the importance of building in extra time during construction to mitigate stress levels.</p>
+                    <p><span class = "light_bold-text">Tailoring Solutions to Personal Needs:</span> Discovered that personal requirements may differ significantly from recommendations found online. For instance, the electrical system was oversized, resulting in unnecessary expenses. Adjusting the system based on my actual needs rather than theoretical needs could have saved substantial costs upfront, highlighting the importance of evaluating personal requirements before making decisions.</p>
+                    <ul>
+                      <li>For example: With 200W of solar and a 200aH battery, my battery level ever dropped below 80%. That was with running a laptop, small hot water pot, lights, and camera gear for days on end. Solar panels are cheap, but batteries are about 1.2-1.5$/aH and if I had picked a 100aH battery that would have saved about $1000 right out the gate.</li>
+                    </ul>
+                    <p><span class = "light_bold-text">These lessons have not only heightened my understanding of project management</span> but also provided invaluable insights that will inform future endeavors.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+
+              <!-- Accordian #4 Start 
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Truck Camper Build
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour">
+                  <div class="accordion-body">
+                    <div class="card-body">
+                      Project description and details for Accordian #4 go here 
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- Accordian #5 Start  -->
+              <!-- <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Van Build
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" >
+                <div class="accordion-body">
+                  <div class="card-body">
+
+                <h4>Description</h4>
+                    <p>In this project, I conceived, developed, and implemented an advanced predictive maintenance program targeting various HVAC motors. The program harnesses live data, motor design specifications, and predictive modeling techniques to proactively detect equipment degradation and suboptimal performance. The primary objective is to mitigate costly and unforeseen equipment failures within HVAC systems.</p>
+                </div>
+              </div>
+            </div> -->
+
+
+
+
+          
+  </div>
 </section>
 
 <!-- ---------Skills Section -------- -->
@@ -333,8 +567,9 @@
 </script>
 
 <!-- Option 2: Separate Popper and Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBud7TlRbs/ic4AwGcFZOxg5DpPt8EgeUIgIwzjWfXQKWA3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -196,3 +196,20 @@ body {
 .bold-text {
     font-weight: bold;
 }
+
+.light_bold-text {
+    font-weight: 625;
+}
+
+
+  /* Adjust the size of the carousel images */
+  .carousel-item img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Adjust the size of the carousel container */
+  .carousel {
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: auto; /* Center the carousel horizontally */
+  }
